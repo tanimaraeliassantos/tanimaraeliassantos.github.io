@@ -764,7 +764,7 @@ header p .smallerText {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	font-size: 1.3rem;
+	font-size: 2rem;
 	color: --dark;
 }
 
@@ -775,13 +775,13 @@ header p .smallerText {
 	}
 }
 
-.skills li i {
+.skills li p {
 	width: 60px;
 	margin-bottom: 5px;
 }
 
 @media (min-width: 780px) {
-	.skills li i {
+	.skills li p {
 		width: 70px;
 	}
 }
