@@ -49,7 +49,11 @@
 		<link rel="shortcut icon" href="assets/favicon.ico" />
 	</head>
 	<body>
-		<!-- navbar -->
+		<!-- 
+
+			** navbar **
+		
+		-->
 		<div class="headerBg wrapper">
 					<nav role="navigation">
 						
@@ -78,10 +82,7 @@
 					<img src="assets/avatar-sitting.png" alt>
 				</div>
 				<div class="headerText">
-					<div id="typed-strings">
-						<h1><span class="type"></span></span></h1>
-					</div>
-					<span id="typed"></span>
+					<h1>Hi! I'm <span id="typed"></span></h1>
 						<p>
 							I'm a <span>web developer</span> with a passion for creating software to improve digital experiences.
 						</p>
@@ -298,7 +299,7 @@
 									Download my resume
 								</button>
 								<div> 
-									
+									<br>
 								</div>
 							</div>
 							<div class="aboutMeImage">
@@ -317,39 +318,39 @@
 						<div class="skillsContainer">
 							<ul class="skills">
 								<li>
-									<i class="fas fa-universal-access"></i>
+									<i class="fas fa-universal-access fa-3x"></i>
 									<p>Accessibility</p>
 								</li>
 								<li>
-									<i class="fab fa-aws"></i>
+									<i class="fab fa-aws fa-3x"></i>
 									<p>AWS</p>
 								</li>
 								<li>
-									<i class="fab fa-css3"></i>
+									<i class="fab fa-css3 fa-3x"></i>
 									<p>CSS</p>
 								</li>
 								<li>
-									<i class="fab fa-github"></i>
+									<i class="fab fa-github fa-3x"></i>
 									<p>GitHub</p>
 								</li>
 								<li>
-									<i class="fab fa-html5"></i>
+									<i class="fab fa-html5 fa-3x"></i>
 									<p>HTML</p>
 								</li>
 								<li>
-									<i class="fab fa-js-square"></i>
+									<i class="fab fa-js-square fa-3x"></i>
 									<p>JavaScript</p>
 								</li>
 								<li>
-									<i class="fab fa-react"></i>
+									<i class="fab fa-react fa-3x"></i>
 									<p>React</p>
 								</li>
 								<li>
-									<i class="fas fa-desktop"></i>
+									<i class="fas fa-desktop fa-3x"></i>
 									<p>Responsive design</p>
 								</li>
 								<li>
-									<i class="fab fa-sass"></i>
+									<i class="fab fa-sass fa-3x"></i>
 									<p>SASS</p>
 								</li>
 							</ul>
@@ -415,12 +416,12 @@
  
 		<script src="vendor/typed.js"></script>
 		<script>
-			var typed = new Typed('.type', {
+			var typed = new Typed('#typed', {
 					strings: [
-						"Hi! I'm Tanimara.",
-						"Hi! I'm a Developer.",
-						"Hi! I'm a Programmer.",
-						"Hi! I'm a Coder."
+						" Tanimara.",
+						" a Developer.",
+						" a Programmer.",
+						" a Coder."
 
 					],
 				typeSpeed: 70,
