@@ -505,7 +505,7 @@ header .imageContainer img {
 header .headerText h1 {
 	font-size: 3rem;
 	font-weight: 700;
-	margin: 10px 0 10px 0;
+	margin: 10px 0;
 	color: var(--blueberry);
 	position: relative;
 	max-width: 200px;
@@ -520,7 +520,7 @@ header .headerText h1 {
 }
 
 header .headerText h1 span {
-	display: block;
+	display: inline;
 }
 
 @media (min-width: 780px) {
@@ -619,21 +619,6 @@ header p .smallerText {
 	font-family: var(--font-family-sans-serif);
 	color: var(--apricot);
 }
-
-/* .section {
-	min-height: 300px;
-	height: 80%;
-	padding: 30px auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-} */
 
 .aboutMe {
 	min-height: 500px;
@@ -764,8 +749,6 @@ header p .smallerText {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	font-size: 2rem;
-	color: --dark;
 }
 
 @media (min-width: 780px) {
@@ -775,14 +758,14 @@ header p .smallerText {
 	}
 }
 
-.skills li p {
-	width: 60px;
+.skills li i {
+	width: 40px;
 	margin-bottom: 5px;
 }
 
 @media (min-width: 780px) {
-	.skills li p {
-		width: 70px;
+	.skills li i {
+		width: 50px;
 	}
 }
 
