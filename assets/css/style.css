@@ -670,6 +670,11 @@ header p .smallerText {
 	color: var(--dark);
 }
 
+.aboutMe .aboutMeContainer .aboutMeBio a {
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
 .aboutMe .aboutMeContainer .aboutMeImage {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -703,7 +708,7 @@ header p .smallerText {
 
 .aboutMe .aboutMeContainer .aboutMeImage img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .skillsContainer {
