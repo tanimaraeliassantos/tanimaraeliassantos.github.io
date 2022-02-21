@@ -2,9 +2,21 @@
 
 Website developed using HTML, CSS and Javascript, hosted on GitHub Pages.
 
+** See the hosted application [here](https://anthropovixen.github.io/tanimarasantos/). **
+
 ![Portfolio Tanimara Santos](./assets/welcome-view-portfolio-Tanimara-Santos-v.01.png)
 
-[Access deployed site here](https://anthropovixen.github.io/tanimarasantos/).
+## Features
+
+- Latest projects developed with images, quick description and links to hosted application and GitHub repositories;
+- About Me section where my resume can be downloaded
+- A skills box with technologies that I can handle
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
 
 ## Author
 
