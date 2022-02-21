@@ -2,7 +2,7 @@
 
 Website developed using HTML, CSS and Javascript, hosted on GitHub Pages.
 
-** See the hosted application [here](https://anthropovixen.github.io/tanimarasantos/). **
+**See the hosted application [here](https://anthropovixen.github.io/tanimarasantos/).**
 
 ![Portfolio Tanimara Santos](./assets/welcome-view-portfolio-Tanimara-Santos-v.01.png)
 
