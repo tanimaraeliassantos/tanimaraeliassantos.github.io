@@ -20,7 +20,7 @@ Website developed using HTML, CSS and Javascript, hosted on GitHub Pages.
 
 ## Author
 
-Tanimara Santos
+[Tanimara Elias Santos](https://github.com/tanimaraeliassantos)
 
 ## Version
 
