@@ -1,8 +1,8 @@
-# Tanimara Santos | Portfolio
+# Tanimara Elias Santos | Portfolio
 
 Website developed using HTML, CSS and Javascript, hosted on GitHub Pages.
 
-**See the hosted application [here](https://anthropovixen.github.io/tanimarasantos/).**
+**See the hosted application [here](https://tanimaraeliassantos.github.io/).**
 
 ![Portfolio Tanimara Santos](./assets/welcome-view-portfolio-Tanimara-Santos-v.01.png)
 
