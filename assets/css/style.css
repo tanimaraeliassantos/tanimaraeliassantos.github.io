@@ -1568,7 +1568,7 @@ img:hover {
 @media (min-width: 780px) {
 	.contact .contactContainer .contactInformation {
 		width: 30%;
-		margin-right: 10%;
+		/* margin-right: 10%; */
 	}
 }
 
