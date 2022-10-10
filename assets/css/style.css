@@ -1530,30 +1530,30 @@ img:hover {
 	}
 }
 
-.contact .contactInformation {
+.contact .contactInformation .socialIcons {
 	width: 100%;
 }
 
-.contact .contactInformation p {
+.contact .contactInformation .socialIcons p {
 	padding-top: 20px;
 }
 
-.contact .contactTitle .contactText .contactInformation .socialIcons {
-	/* display: -webkit-box;
+.socialIcons {
+	color: red;
+}
+
+.socialIcons li a {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	-ms-flex-pack: distribute;
-	justify-content: space-between; */
+	justify-content: space-between;
 	padding: 0;
 }
 
 .contact .contactInformation .socialIcons li {
 	font-size: 2.4rem;
-}
-
-.contact .contactInformation .socialIcons li a {
-	color: var(--blueberry);
 }
 
 .contact .contactInformation .socialIcons li a:hover {
