@@ -1506,7 +1506,6 @@ img:hover {
 	padding: 50px 0;
 	font-size: 1.6rem;
 	height: auto;
-	z-index: -10;
 }
 
 @media (min-width: 780px) {
@@ -1515,60 +1514,56 @@ img:hover {
 	}
 }
 
-.contact h3 {
+.contactTitle {
 	color: var(--apricot);
 	font-size: 3rem;
 	padding: 0;
 	margin: 0;
-	position: relative;
+	position: fixed;
 	z-index: 2;
 }
 
 @media (min-width: 780px) {
-	.contact .contactContainer {
-		display: -webkit-box;
-		display: -ms-flexbox;
+	.contactTitle .contactText .socialIcons {
 		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
+		justify-content: start;
 	}
 }
 
-.contact .contactContainer .contactInformation {
+.contact .contactInformation {
 	width: 100%;
 }
 
-.contact .contactContainer .contactInformation p {
+.contact .contactInformation p {
 	padding-top: 20px;
 }
 
-.contact .contactContainer .contactInformation .socialIcons {
-	display: -webkit-box;
+.contact .contactTitle .contactText .contactInformation .socialIcons {
+	/* display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: space-between; */
 	padding: 0;
 }
 
-.contact .contactContainer .contactInformation .socialIcons li {
+.contact .contactInformation .socialIcons li {
 	font-size: 2.4rem;
 }
 
-.contact .contactContainer .contactInformation .socialIcons li a {
+.contact .contactInformation .socialIcons li a {
 	color: var(--blueberry);
 }
 
-.contact .contactContainer .contactInformation .socialIcons li a:hover {
+.contact .contactInformation .socialIcons li a:hover {
 	color: var(--apricot);
 }
 
 @media (min-width: 780px) {
-	.contact .contactContainer .contactInformation {
+	.contact .contactInformation {
 		width: 30%;
-		/* margin-right: 10%; */
+		margin-right: 10%;
 	}
 }
 
