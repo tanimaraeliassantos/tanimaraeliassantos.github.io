@@ -79,6 +79,7 @@ html input[type='button'],
 input[type='reset'],
 input[type='submit'] {
 	-webkit-appearance: button;
+	appearance: auto;
 	cursor: pointer;
 }
 
@@ -96,6 +97,7 @@ input[type='radio'] {
 
 input[type='search'] {
 	-webkit-appearance: textfield;
+	appearance: auto;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 }
@@ -103,6 +105,7 @@ input[type='search'] {
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
 	-webkit-appearance: none;
+	appearance: auto;
 }
 
 textarea {
@@ -1503,8 +1506,6 @@ img:hover {
 
 .contact {
 	background-color: transparent;
-	padding: 50px 0;
-	font-size: 1.6rem;
 	height: auto;
 }
 
@@ -1515,26 +1516,31 @@ img:hover {
 }
 
 .contactTitle {
+	display: inline-block;
+	font-size: 2.5rem;
+	font-weight: 600;
+	padding: 10px 0;
+	text-align: center;
 	color: var(--apricot);
-	font-size: 3rem;
-	padding: 0;
-	margin: 0;
-	position: fixed;
-	z-index: 2;
+}
+
+.contactText {
+	color: var(--dark);
+	font-size: 1.8rem;
 }
 
 @media (min-width: 780px) {
-	.contactTitle .contactText .socialIcons {
+	.contactContainer .socialIcons {
 		display: flex;
 		justify-content: start;
 	}
 }
 
-.contact .contactInformation .socialIcons {
+.contact .contactContainer .socialIcons {
 	width: 100%;
 }
 
-.contact .contactInformation .socialIcons p {
+.contact .contactContainer .socialIcons p {
 	padding-top: 20px;
 }
 
