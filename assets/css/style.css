@@ -1530,27 +1530,34 @@ img:hover {
 }
 
 @media (min-width: 780px) {
-	.contactContainer .socialIcons {
+	.contactContainer {
 		display: flex;
 		justify-content: start;
 	}
 }
 
-.contact .contactContainer .socialIcons {
+.contact .contactContainer {
 	width: 100%;
 }
 
-.contact .contactContainer .socialIcons p {
+.contact .contactContainer p {
 	padding-top: 20px;
+}
+
+.socialIconsContainer {
+	background-color: var(--apricot);
+	color: var(--white);
 }
 
 .socialIcons {
 	color: var(--apricot);
+	font-size: large;
+}
+
+.socialIcons li {
 	list-style: none;
+	text-align: center;
 	display: flex;
-	-ms-flex-pack: distribute;
-	justify-content: space-between;
-	padding: 0;
 }
 
 .contact .contactInformation li {
