@@ -24,4 +24,4 @@ Website developed using HTML, CSS and Javascript, hosted on GitHub Pages.
 
 ## Version
 
-1.0.0
+1.1.0
