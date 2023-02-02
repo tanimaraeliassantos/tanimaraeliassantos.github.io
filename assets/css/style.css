@@ -1544,14 +1544,19 @@ img:hover {
 	padding-top: 20px;
 }
 
-.socialIconsContainer {
-	background-color: var(--apricot);
-	color: var(--white);
-}
-
 .socialIcons {
 	color: var(--apricot);
 	font-size: large;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 20px auto 60px auto;
+	padding: 20px 0;
 }
 
 .socialIcons li {
@@ -1576,7 +1581,7 @@ img:hover {
 }
 
 footer.main-footer {
-	padding: 30px;
+	padding: 20px;
 	background: var(--blueberry);
 	justify-content: center;
 	align-items: center;
@@ -1587,7 +1592,7 @@ footer.main-footer p {
 	margin: 0;
 	color: var(--white);
 	font-family: var(--font-family);
-	font-size: 1.8rem;
+	font-size: 0.8 rem;
 }
 
 .typed-cursor {
