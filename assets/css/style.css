@@ -1531,38 +1531,27 @@ img:hover {
 
 @media (min-width: 780px) {
 	.contactContainer {
-		display: flex;
-		justify-content: start;
+		display: block;
+		padding: 10px 0px;
+		width: 100%
 	}
-}
-
-.contact .contactContainer {
-	width: 100%;
-}
-
-.contact .contactContainer p {
-	padding-top: 20px;
 }
 
 .socialIcons {
 	color: var(--apricot);
 	font-size: large;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 20px auto 60px auto;
-	padding: 20px 0;
 }
 
 .socialIcons li {
 	list-style: none;
+	font-size: 2.4rem;
 	text-align: center;
-	display: flex;
+
+}
+.inline{
+	width: 100px;
 }
 
 .contact .contactInformation li {
