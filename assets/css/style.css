@@ -1570,15 +1570,26 @@ img:hover {
 }
 
 footer.main-footer {
-	padding: 20px;
+	width: 90%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 20px auto 0 auto;
+	padding: 20px 0;
 	background: var(--blueberry);
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	vertical-align: bottom;
+	
 }
 
 footer.main-footer p {
-	margin: 0;
+	
 	color: var(--white);
 	font-family: var(--font-family);
 	font-size: 0.8 rem;
