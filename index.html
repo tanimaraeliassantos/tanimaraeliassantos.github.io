@@ -44,17 +44,22 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 		<!-- FlatIcon -->
-		<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-rounded-regular.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-rounded-regular.css"
+		/>
 
 		<!-- theme stylesheet -->
 		<link rel="stylesheet" href="assets/css/style.css" id="theme-stylesheet" />
-		
+
 		<!--Favicon-->
 		<link rel="shortcut icon" href="assets/favicon.ico" />
 
 		<!--Devicon-->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
 	</head>
 	<body>
 		<!-- 
@@ -62,39 +67,48 @@
 			** navbar **
 		
 		-->
-		<div class="headerBg wrapper">
-					<nav role="navigation">
-						
-						<div class="menu-toggle"><span>Menu</span></div>
-							<ul class="menu">
-								<li>
-									<a class="link" href="#projects">Projects</a>
-								</li>
-								<li>
-									<a class="link" href="#aboutMe">About me</a>
-								</li>
-								<li >
-									<a class="link" href="#contact">Contact</a>
-								</li>
-							</ul>
-					</nav>
-
+		<label class="hamburger-menu">
+			<input type="checkbox" />
+		</label class="hamburger-menu">
+		<aside class="sidebar">
+			<nav>
+				<li>
+					<a class="link" href="#header-background">Home</a>
+				</li>
+				<li>
+					<a class="link" href="#projects">Projects</a>
+				</li>
+				<li>
+					<a class="link" href="#aboutMe">About me</a>
+				</li>
+				<li>
+					<a class="link" href="#contact">Contact</a>
+				</li>
+			</nav>
+		</aside>
 			<!--
 
 				** INTRO **
 
 			-->
-
-			<header  data-aos="fade-up" data-aos-once="true" class="aos-init aos-animate" id="header-background">
+			<div class="wrapper" data-aos="fade-up" data-aos-once="true">
+			<header
+				data-aos="fade-up"
+				data-aos-once="true"
+				class="aos-init aos-animate"
+				id="header"
+			>
 				<div class="imageContainer">
-					<img src="assets/avatar-sitting.png" alt>
+					<img src="assets/avatar-sitting.png" alt />
 				</div>
 				<div class="headerText">
 					<h1>Hi! I'm <span id="typed"></span></h1>
-						<p>
-							I'm a <span>web developer</span> living in Madrid who is passionate about creating web applications to improve digital experiences.</p>
+					<p>
+						I'm a <span>web developer</span> living in Madrid who is passionate
+						about creating web applications to improve digital experiences.
+					</p>
 				</div>
-				
+
 				<p class="scrollDownText">
 					<i class="fas fa-angle-down"></i>
 				</p>
@@ -104,333 +118,432 @@
 			<!-- 
 				** PORTFOLIO **
 			-->
-				<section class="section" id="projects">
-					<div class="wrapper" data-aos="fade-up" data-aos-once="true">
-						<h2 class="title">Projects</h2>
-					</div>
-					<div class="aboutMeContainer">
-						<div class="aboutMeBio">				
-							<section class="portfolioProjects" data-aos="fade-up" data-aos-once="true">
-								<div class="wrapper">
-									<div class="projectsContainer">
-										<div class="firstRow">
-												<!-- 
+			<section class="section" id="projects">
+				<div class="wrapper" data-aos="fade-up" data-aos-once="true">
+					<h2 class="title">Projects</h2>
+				</div>
+				<div class="aboutMeContainer">
+					<div class="aboutMeBio">
+						<section
+							class="portfolioProjects"
+							data-aos="fade-up"
+							data-aos-once="true"
+						>
+							<div class="wrapper">
+								<div class="projectsContainer">
+									<div class="firstRow">
+										<!-- 
 													** myFlix Angular Client **
 												-->
-													<div class="portfolioOne">
-														<img src="assets/myFlix-Angular-mockup.png" alt="" class="imageOne"/>
-															<div class="overlayOne">
-																<i class="fas fa-times fa-2x closeOverlayOne"></i>
-																	<h3>myFlix Angular Client</h3>
-																	<p> Client-side of a movie database app built with Angular.
-																		User can view and manage information on movies they like and on their profile.
-																	</p>
-																	<ul class="toolsUsed">
-																		<li>Angular</li>
-																		<li> Express</li>
-																		<li> Mongoose</li>
-																		<li> Node</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://tanimaraeliassantos.github.io/Angular-Client-myFlix-App/welcome" target="_/blank" class="button">view live</a>
-																		<a href="https://github.com/tanimaraeliassantos/Angular-Client-myFlix-App" target="_/blank" class="button">github</a>
-																	</div>
-															</div>		
-													</div>									
-												
-												<!-- 
+										<div class="portfolioOne">
+											<img
+												src="assets/myFlix-Angular-mockup.png"
+												alt=""
+												class="imageOne"
+											/>
+											<div class="overlayOne">
+												<i class="fas fa-times fa-2x closeOverlayOne"></i>
+												<h3>myFlix Angular Client</h3>
+												<p>
+													Client-side of a movie database app built with
+													Angular. User can view and manage information on
+													movies they like and on their profile.
+												</p>
+												<ul class="toolsUsed">
+													<li>Angular</li>
+													<li>Express</li>
+													<li>Mongoose</li>
+													<li>Node</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://tanimaraeliassantos.github.io/Angular-Client-myFlix-App/welcome"
+														target="_/blank"
+														class="button"
+														>view live</a
+													>
+													<a
+														href="https://github.com/tanimaraeliassantos/Angular-Client-myFlix-App"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<!-- 
 													** myFlix React Client **
 												-->
 
-													<div class="portfolioTwo">
-														<img src="assets/myFlix-react-mockup.png" alt="" class="imageTwo"/>
-															<div class="overlayTwo">
-																<i class="fas fa-times fa-2x closeOverlayTwo"></i>										
-																	<h3> myFlix React Client</h3>
-																	<p>Client-side of a movie database app built with React.
-																		Users can view and manage information on movies they like and on their profile.
-																	</p>
-																	<ul class="toolsUsed">
-																		<li>Express</li>
-																		<li>Mongoose</li>
-																		<li>Node</li>
-																		<li>React</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://moviesmyflix.netlify.app/" target="_/blank" class="button">view live</a>
-																		<a href="https://github.com/tanimaraeliassantos/myFlix-client" target="_/blank" class="button">github</a>
-																	</div>
-																
-															</div>
-													</div>
+										<div class="portfolioTwo">
+											<img
+												src="assets/myFlix-react-mockup.png"
+												alt=""
+												class="imageTwo"
+											/>
+											<div class="overlayTwo">
+												<i class="fas fa-times fa-2x closeOverlayTwo"></i>
+												<h3>myFlix React Client</h3>
+												<p>
+													Client-side of a movie database app built with React.
+													Users can view and manage information on movies they
+													like and on their profile.
+												</p>
+												<ul class="toolsUsed">
+													<li>Express</li>
+													<li>Mongoose</li>
+													<li>Node</li>
+													<li>React</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://moviesmyflix.netlify.app/"
+														target="_/blank"
+														class="button"
+														>view live</a
+													>
+													<a
+														href="https://github.com/tanimaraeliassantos/myFlix-client"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
 										</div>
-										<div class="secondRow">
-												
-												<!--
+									</div>
+									<div class="secondRow">
+										<!--
 													** myFlix Server-side Project **
 												-->
 
-													<div class="portfolioThree">
-														<img src="assets/myFlix-server-mockup.png" alt="" class="imageThree"/>
-															<div class="overlayThree">
-																<i class="fas fa-times fa-2x closeOverlayThree"></i>
-																	<h3>myFlix Server-side Project</h3>
-																	<p>
-																		Backend of myFlix App. A MERN stack, 
-																		RESTful app stored in MongoDB, using JSON Web Tokens
-																		to secure information.
-																	</p>
-																	<ul class="toolsUsed">
-																		<li> Express</li>
-																		<li>Heroku</li>
-																		<li>MongoDB</li>
-																		<li>Node</li>
-																		<li>Postman</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://github.com/tanimaraeliassantos/myFlix-Project" target="_/blank" class="button">github</a>
-																	</div>
-																		
-															</div>
-													</div>
-											
+										<div class="portfolioThree">
+											<img
+												src="assets/myFlix-server-mockup.png"
+												alt=""
+												class="imageThree"
+											/>
+											<div class="overlayThree">
+												<i class="fas fa-times fa-2x closeOverlayThree"></i>
+												<h3>myFlix Server-side Project</h3>
+												<p>
+													Backend of myFlix App. A MERN stack, RESTful app
+													stored in MongoDB, using JSON Web Tokens to secure
+													information.
+												</p>
+												<ul class="toolsUsed">
+													<li>Express</li>
+													<li>Heroku</li>
+													<li>MongoDB</li>
+													<li>Node</li>
+													<li>Postman</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://github.com/tanimaraeliassantos/myFlix-Project"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
+										</div>
 
-												<!--
+										<!--
 													** DEVChat App **
 												-->
 
-													<div class="portfolioFour">
-														<img src="assets/DEV-chat-mockup.png" alt="" class="imageFour"/>
-															<div class="overlayFour">
-																<i class="fas fa-times fa-2x closeOverlayFour"></i>
-																	<h3> DevChat App</h3>
-																	<p>
-																		A chat application for mobile devices built with React Native and Expo.
-																	</p>
-																	<ul class="toolsUsed">
-																		<li>Expo</li>
-																		<li>Firebase</li>
-																		<li>Gifted Chat</li>
-																		<li>React Native</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://www.youtube.com/watch?v=k6-SGBRoPmI" target="_/blank" class="button">view demo</a>
-																		<a href="https://github.com/tanimaraeliassantos/DEV-chat-app" target="_/blank" class="button">github</a>
-																	</div>	
-															</div>
-													</div>
+										<div class="portfolioFour">
+											<img
+												src="assets/DEV-chat-mockup.png"
+												alt=""
+												class="imageFour"
+											/>
+											<div class="overlayFour">
+												<i class="fas fa-times fa-2x closeOverlayFour"></i>
+												<h3>DevChat App</h3>
+												<p>
+													A chat application for mobile devices built with React
+													Native and Expo.
+												</p>
+												<ul class="toolsUsed">
+													<li>Expo</li>
+													<li>Firebase</li>
+													<li>Gifted Chat</li>
+													<li>React Native</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://www.youtube.com/watch?v=k6-SGBRoPmI"
+														target="_/blank"
+														class="button"
+														>view demo</a
+													>
+													<a
+														href="https://github.com/tanimaraeliassantos/DEV-chat-app"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
 										</div>
-										<div class="thirdRow">
-
-												<!--
+									</div>
+									<div class="thirdRow">
+										<!--
 													** WebDevMeetUp App
 												-->
 
-													<div class="portfolioFive">
-														<img src="assets/meet-up-mockup.png" alt="" class="imageFive"/>
-															<div class="overlayFive">
-																<i class="fas fa-times fa-2x closeOverlayFive"></i>
-																	<h3> WebDevMeetUp App</h3>
-																	<p>
-																		Serverless PWA built with React using a test-driven technique.
-																		It uses Google Calendar API to fetch upcoming events for the community
-																		of web developers and it can be downloaded for offline use.
-																	</p>
-																	<ul class="toolsUsed">
-																		<li>AWS</li>
-																		<li>Google Calendar API</li>
-																		<li>React</li>
-																		<li>Recharts</li>
-																		<li>OAuth2</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://tanimaraeliassantos.github.io/webdevmeetup/" target="_/blank" class="button">view live</a>
-																		<a href="https://github.com/tanimaraeliassantos/webdevmeetup" target="_/blank" class="button">github</a>
-																	</div>
-																		
-															</div>
-													</div>
+										<div class="portfolioFive">
+											<img
+												src="assets/meet-up-mockup.png"
+												alt=""
+												class="imageFive"
+											/>
+											<div class="overlayFive">
+												<i class="fas fa-times fa-2x closeOverlayFive"></i>
+												<h3>WebDevMeetUp App</h3>
+												<p>
+													Serverless PWA built with React using a test-driven
+													technique. It uses Google Calendar API to fetch
+													upcoming events for the community of web developers
+													and it can be downloaded for offline use.
+												</p>
+												<ul class="toolsUsed">
+													<li>AWS</li>
+													<li>Google Calendar API</li>
+													<li>React</li>
+													<li>Recharts</li>
+													<li>OAuth2</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://tanimaraeliassantos.github.io/webdevmeetup/"
+														target="_/blank"
+														class="button"
+														>view live</a
+													>
+													<a
+														href="https://github.com/tanimaraeliassantos/webdevmeetup"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
+										</div>
 
-												<!--
+										<!--
 													** Pokedex Project **
 												-->
 
-													<div class="portfolioSix">
-														<img src="assets/pokedex-mockup.png" alt="" class="imageSix"></span>
-															<div class="overlaySix">
-																<i class="fas fa-times fa-2x closeOverlaySix"></i>
-																	<h3>Pokedex App</h3>
-																	<p>
-																		A Pokemon Index App built with HTML, CSS and JavaScript
-																		that loads data from an external API and enables viewing of data
-																		points in details to the user.</p>
-																	<ul class="toolsUsed">
-																		<li>Bootstrap</li>
-																		<li>CSS</li>
-																		<li>HTML</li>
-																		<li>JavaScript</li>
-																	</ul>
-																	<div class="viewProject">
-																		<a href="https://tanimaraeliassantos.github.io/pokedexproject" target="_/blank" class="button">view live</a>
-																		<a href="https://github.com/tanimaraeliassantos/pokedexproject" target="_/blank" class="button">github</a>
-																	</div>
-															</div>
-													</div>
-									
+										<div class="portfolioSix">
+											<img
+												src="assets/pokedex-mockup.png"
+												alt=""
+												class="imageSix"
+											/>
+											<div class="overlaySix">
+												<i class="fas fa-times fa-2x closeOverlaySix"></i>
+												<h3>Pokedex App</h3>
+												<p>
+													A Pokemon Index App built with HTML, CSS and
+													JavaScript that loads data from an external API and
+													enables viewing of data points in details to the user.
+												</p>
+												<ul class="toolsUsed">
+													<li>Bootstrap</li>
+													<li>CSS</li>
+													<li>HTML</li>
+													<li>JavaScript</li>
+												</ul>
+												<div class="viewProject">
+													<a
+														href="https://tanimaraeliassantos.github.io/pokedexproject"
+														target="_/blank"
+														class="button"
+														>view live</a
+													>
+													<a
+														href="https://github.com/tanimaraeliassantos/pokedexproject"
+														target="_/blank"
+														class="button"
+														>github</a
+													>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</section>
-						</div>
-					</div>
-				</section>
-			<!-- 
-				** ABOUT ME **
-			-->
-				<section class="aboutMe" id="aboutMe">
-					<div class="wrapper" data-aos="fade-up" data-aos-once="true">
-						<h2 class="title">About Me</h2>
-						<div class="aboutMeContainer">
-							<div class="aboutMeBio">
-								<p>
-									Hi again! Thank you for scrolling this far! I have recently moved to Spain from Australia, where I worked as a Full-Stack Web Developer
-									building technical solutions for digital experiences, gaining experience in different technologies.
-								</p>
-								<p>
-									My unique background has helped me to develop a unique approach to sprints and to producing, reviewing and fixing code in fast paced environments while maintaining an easy-going vibe.
-								</p>
-								<p>I'm ready to make a positive impact on people's lives online. One app at a time!🤓</p>
-								<a class="btn btn-outline-light" href="assets/Resume - Tanimara ELIAS SANTOS - Software Developer.pdf" id="resume" type="button" download="Tanimara Santos Full Stack Developer Resume">
-									Download my resume
-								</a>
-							<br>		
 							</div>
-							<div class="aboutMeImage">
-								<img src="assets/headshot-sml-closeup-bg-citrus.png" alt="Photo of Tanimara Santos, Full-Stack Developer"/>
-							</div>							
-						</div>
-						
-					</div>
-				</section>
-			<!-- 
-				** SKILLS ** 
-			-->
-				<section class="section" id="skills">
-					<div class="wrapper" data-aos="fade-up" data-aos-once="true">
-						<h2 class="title">Skills</h2>
-						<div class="skillsContainer">
-							<ul class="skills">
-								<li>
-									<i class="fas fa-universal-access fa-3x"></i>
-									<p>Accessibility</p>
-								</li>
-								<li>
-									<i class="fab fa-angular fa-3x"></i>
-									<p>Angular</p>
-								</li>
-								<li>
-									<i class="fab fa-aws fa-3x"></i>
-									<p>AWS</p>
-								</li>
-								<li>
-									<i class="fab fa-css3 fa-3x"></i>
-									<p>CSS</p>
-								</li>
-								<li>
-									<i class="fab fa-github fa-3x"></i>
-									<p>GitHub</p>
-								</li>
-								<li>
-									<i class="fab fa-html5 fa-3x"></i>
-									<p>HTML</p>
-								</li>
-								<li>
-									<i class="fab fa-js-square fa-3x"></i>
-									<p>JavaScript</p>
-								</li>
-								<li>
-									<i class="fab fa-php fa-3x"></i>
-									<p>PHP</p>
-								</li>
-								<li>
-									<i class="fab fa-react fa-3x"></i>
-									<p>React | React Native</p>
-								</li>
-								<li>
-									<i class="fas fa-desktop fa-3x"></i>
-									<p>Responsive design</p>
-								</li>
-								<li>
-									<i class="fab fa-sass fa-3x"></i>
-									<p>SASS</p>
-								</li>
-								<li>
-									<i class="fas fa-database fa-3x"></i>
-									<p>SQL</p>
-								</li>
-								<li>
-									
-									<i style="font-size:30px" class="devicon-typescript-plain"></i>
-									<p>TypeScript</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<br>
-				<hr/>
-				<br>
-				
-			<!-- 
-				** CONTACT ** 
-			-->
-			 <section class="section" id="contact" >
-				 <div class="wrapper" data-aos="fade-up" data-aos-once="true">
-					<h3 class="contactTitle">Let's Chat!</h3>
-					<div class="contactContainer">
-						<p class="contactText">
-							My inbox is always open. Whether you have a question or just want to say hi, send me a message. I'll do my best to get back to you!
-						</p>
-					
-							<ul class="socialIcons">
-								<li class="inline">
-									<a href='https://www.linkedin.com/in/tanimara-santos/'><i class="fab fa-linkedin-in"></i></a>
-								</li>
-								<li class="inline">
-									<a href='https://github.com/tanimaraeliassantos'><i class="fab fa-github"></i></a>
-								</li>
-								<li class="inline">
-									<a href="mailto:tanimaraeliassantos@gmail.com?subject=Web%20Development%20Opportunities"><i class="fas fa-envelope"></i></a>
-								</li>
-							</ul>
-						
+						</section>
 					</div>
 				</div>
 			</section>
+			<!-- 
+				** ABOUT ME **
+			-->
+			<section class="aboutMe" id="aboutMe">
+				<div class="wrapper" data-aos="fade-up" data-aos-once="true">
+					<h2 class="title">About Me</h2>
+					<div class="aboutMeContainer">
+						<div class="aboutMeBio">
+							<p>
+								Hi again! Thank you for scrolling this far! I have recently
+								moved to Spain from Australia, where I worked as a Full-Stack
+								Web Developer building technical solutions for digital
+								experiences, gaining experience in different technologies.
+							</p>
+							<p>
+								My unique background has helped me to develop a unique approach
+								to sprints and to producing, reviewing and fixing code in fast
+								paced environments while maintaining an easy-going vibe.
+							</p>
+							<p>
+								I'm ready to make a positive impact on people's lives online.
+								One app at a time!🤓
+							</p>
+							<a
+								class="btn btn-outline-light"
+								href="assets/Resume - Tanimara ELIAS SANTOS - Software Developer.pdf"
+								id="resume"
+								type="button"
+								download="Tanimara Santos Full Stack Developer Resume"
+							>
+								Download my resume
+							</a>
+							<br />
+						</div>
+						<div class="aboutMeImage">
+							<img
+								src="assets/headshot-sml-closeup-bg-citrus.png"
+								alt="Photo of Tanimara Santos, Full-Stack Developer"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+				** SKILLS ** 
+			-->
+			<section class="section" id="skills">
+				<div class="wrapper" data-aos="fade-up" data-aos-once="true">
+					<h2 class="title">Skills</h2>
+					<div class="skillsContainer">
+						<ul class="skills">
+							<li>
+								<i class="fas fa-universal-access fa-3x"></i>
+								<p>Accessibility</p>
+							</li>
+							<li>
+								<i class="fab fa-angular fa-3x"></i>
+								<p>Angular</p>
+							</li>
+							<li>
+								<i class="fab fa-aws fa-3x"></i>
+								<p>AWS</p>
+							</li>
+							<li>
+								<i class="fab fa-css3 fa-3x"></i>
+								<p>CSS</p>
+							</li>
+							<li>
+								<i class="fab fa-github fa-3x"></i>
+								<p>GitHub</p>
+							</li>
+							<li>
+								<i class="fab fa-html5 fa-3x"></i>
+								<p>HTML</p>
+							</li>
+							<li>
+								<i class="fab fa-js-square fa-3x"></i>
+								<p>JavaScript</p>
+							</li>
+							<li>
+								<i class="fab fa-php fa-3x"></i>
+								<p>PHP</p>
+							</li>
+							<li>
+								<i class="fab fa-react fa-3x"></i>
+								<p>React | React Native</p>
+							</li>
+							<li>
+								<i class="fas fa-desktop fa-3x"></i>
+								<p>Responsive design</p>
+							</li>
+							<li>
+								<i class="fab fa-sass fa-3x"></i>
+								<p>SASS</p>
+							</li>
+							<li>
+								<i class="fas fa-database fa-3x"></i>
+								<p>SQL</p>
+							</li>
+							<li>
+								<i style="font-size: 30px" class="devicon-typescript-plain"></i>
+								<p>TypeScript</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<br />
+			<hr />
+			<br />
+
+			<!-- 
+				** CONTACT ** 
+			-->
+			<section class="section" id="contact">
+				<div class="wrapper" data-aos="fade-up" data-aos-once="true">
+					<h3 class="contactTitle">Let's Chat!</h3>
+					<div class="contactContainer">
+						<p class="contactText">
+							My inbox is always open. Whether you have a question or just want
+							to say hi, send me a message. I'll do my best to get back to you!
+						</p>
+
+						<ul class="socialIcons">
+							<li class="inline">
+								<a href="https://www.linkedin.com/in/tanimara-santos/"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+							</li>
+							<li class="inline">
+								<a href="https://github.com/tanimaraeliassantos"
+									><i class="fab fa-github"></i
+								></a>
+							</li>
+							<li class="inline">
+								<a
+									href="mailto:tanimaraeliassantos@gmail.com?subject=Web%20Development%20Opportunities"
+									><i class="fas fa-envelope"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 		</main>
-			<!--
+		<!--
 			**FOOTER**
 			 -->
-			<footer class="main-footer">
-				<p>designed and developed by Tanimara Santos 2022</p>
-			</footer>
- 
+		<footer class="main-footer">
+			<p>designed and developed by Tanimara Santos 2022</p>
+		</footer>
+
 		<script src="vendor/typed.js"></script>
 		<script>
 			var typed = new Typed('#typed', {
-					strings: [
-						" Tanimara.",
-						" a Developer.",
-						" a Programmer.",
-						" a Coder."
-
-					],
+				strings: [' Tanimara.', ' a Developer.', ' a Programmer.', ' a Coder.'],
 				typeSpeed: 70,
 				backSpeed: 70,
-				loop: true
-			})
+				loop: true,
+			});
 		</script>
-		</script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="script.js"></script>
 		<script src="vendor/owl-carousel/owl.carousel.js"></script>
@@ -438,7 +551,5 @@
 		<script>
 			AOS.init();
 		</script>
-		
-		
 	</body>
 </html>
