@@ -230,7 +230,7 @@ a {
 	background-color: var(--blueberry);
 	color: var(--white);
 	text-shadow: #696969;
-	z-index:2;
+	z-index: 2;
 }
 
 .sidebar li {
@@ -240,7 +240,6 @@ a {
 
 .sidebar a {
 	color: var(--white);
-	
 }
 
 .sidebar a:hover,
@@ -571,16 +570,16 @@ main {
 	margin-top: 100px;
 }
 
-.portfolioProjects {
+/* .portfolioProjects {
 	margin: 0 0 100px 0;
 	overflow: hidden;
-}
+} */
 
 img:hover {
 	cursor: pointer;
 }
 
-.overlayOne,
+/* .overlayOne,
 .overlayTwo,
 .overlayThree,
 .overlayFour,
@@ -1292,6 +1291,9 @@ img:hover {
 	.thirdRow .portfolioSix img {
 		margin-right: -30px;
 	}
+} */
+
+.projectsScroller {
 }
 
 .contact {
@@ -1372,10 +1374,10 @@ img:hover {
 	bottom: 20px;
 	right: 40px;
 	z-index: 99;
-	border: none; 
-	outline: none; 
+	border: none;
+	outline: none;
 	background-color: var(--blueberry);
-	background-image: url('https://api.iconify.design/material-symbols/arrow-upward.svg?color=white');/* Set a background color */
+	background-image: url('https://api.iconify.design/material-symbols/arrow-upward.svg?color=white'); /* Set a background color */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1384,11 +1386,11 @@ img:hover {
 	padding: 10px; /* Some padding */
 	border-radius: 5px; /* Rounded corners */
 	font-size: 12px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
 	background-color: #555; /* Add a dark-grey background on hover */
-  }
+}
 
 footer.main-footer {
 	width: 100%;
