@@ -34,11 +34,15 @@
 			crossorigin="anonymous"
 		></script>
 
-		<!-- owl carousel basic stylesheet -->
-		<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css" />
-
-		<!-- owl carousel default theme -->
-		<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" />
+		<!-- owl carousel -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		/>
 
 		<!--animate on scroll-->
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -88,7 +92,10 @@
 				id="header"
 			>
 				<div class="imageContainer">
-					<img src="assets/avatar-sitting.png" alt />
+					<img
+						src="assets/avatar-sitting.png"
+						alt="drawing of black woman with short hair sitting on a bench"
+					/>
 				</div>
 				<div class="headerText">
 					<h1>Hi! I'm <span id="typed"></span></h1>
@@ -105,233 +112,235 @@
 		</div>
 		<main>
 			<!--** PORTFOLIO **-->
-			<section class="section" id="projects">
+			<div class="section" id="projects">
 				<div class="wrapper">
 					<h2 class="title">Projects</h2>
 				</div>
+				<div class="wrapper">
 				<div class="projectsCarousel">
-					<button class="carouselButton"></button>
-					<div class="carouselTrackContainer">
-						<ul class="carouselTrack">
-							<li class="carouselSlide"> <img src="assets/myFlix-Angular-mockup.png"></li>
-							<li class="carouselSlide"> <img src="assets/myFlix-react-mockup.png"></li>
-							<li class="carouselSlide"> <img src="assets/myFlix-server-mockup.png"></li>
-							<li class="carouselSlide"> <img src="assets/DEV-chat-mockup.png"></li>
-							<li class="carouselSlide"> <img src="assets/meet-up-mockup.png"></li>
-							<li class="carouselSlide"> <img src="assets/pokedex-mockup.png"></li>
-						</ul>
-					</div>
-					<button class="carouselButton"></button>
+					<button class="carouselButton">&leftarrow;</button>
+
+					<ul class="carouselTrack owl-carousel owl-theme">
+						<li class="carouselSlide">
+							<img
+								src="assets/myFlix-Angular-mockup.png"
+								alt="Mockup de la aplicación myFlix Angular Client"
+								class="imageOne"
+							/>
+
+							<div class="overlayOne">
+								<i class="fas fa-times fa-2x closeOverlayOne"></i>
+								<h3>myFlix Angular Client</h3>
+								<p>
+									Client-side of a movie database app built with Angular. User
+									can view and manage information on movies they like and on
+									their profile.
+								</p>
+								<ul class="toolsUsed">
+									<li>Angular</li>
+									<li>Express</li>
+									<li>Mongoose</li>
+									<li>Node</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://tanimaraeliassantos.github.io/Angular-Client-myFlix-App/welcome"
+										target="_blank"
+										class="button"
+										>view live</a
+									>
+									<a
+										href="https://github.com/tanimaraeliassantos/Angular-Client-myFlix-App"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+
+						<li class="carouselSlide">
+							<img
+								src="assets/myFlix-react-mockup.png"
+								alt="Mockup de la aplicación myFlix React Client"
+								class="imageTwo"
+							/>
+							<div class="overlayTwo">
+								<i class="fas fa-times fa-2x closeOverlayTwo"></i>
+								<h3>myFlix React Client</h3>
+								<p>
+									Client-side of a movie database app built with React. Users
+									can view and manage information on movies they like and on
+									their profile.
+								</p>
+								<ul class="toolsUsed">
+									<li>Express</li>
+									<li>Mongoose</li>
+									<li>Node</li>
+									<li>React</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://moviesmyflix.netlify.app/"
+										target="_blank"
+										class="button"
+										>view live</a
+									>
+									<a
+										href="https://github.com/tanimaraeliassantos/myFlix-client"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+
+						<li class="carouselSlide">
+							<img
+								src="assets/myFlix-server-mockup.png"
+								alt="Mockup de la aplicación myFlix Server"
+								class="imageThree"
+							/>
+							<div class="overlayThree">
+								<i class="fas fa-times fa-2x closeOverlayThree"></i>
+								<h3>myFlix Server-side Project</h3>
+								<p>
+									Backend of myFlix App. A MERN stack, RESTful app stored in
+									MongoDB, using JSON Web Tokens to secure information.
+								</p>
+								<ul class="toolsUsed">
+									<li>Express</li>
+									<li>Heroku</li>
+									<li>MongoDB</li>
+									<li>Node</li>
+									<li>Postman</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://github.com/tanimaraeliassantos/myFlix-Project"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+
+						<li class="carouselSlide">
+							<img
+								src="assets/DEV-chat-mockup.png"
+								alt="Mockup de la aplicación DevChat"
+								class="imageFour"
+							/>
+							<div class="overlayFour">
+								<i class="fas fa-times fa-2x closeOverlayFour"></i>
+								<h3>DevChat App</h3>
+								<p>
+									A chat application for mobile devices built with React Native
+									and Expo.
+								</p>
+								<ul class="toolsUsed">
+									<li>Expo</li>
+									<li>Firebase</li>
+									<li>Gifted Chat</li>
+									<li>React Native</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://www.youtube.com/watch?v=k6-SGBRoPmI"
+										target="_blank"
+										class="button"
+										>view demo</a
+									>
+									<a
+										href="https://github.com/tanimaraeliassantos/DEV-chat-app"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+
+						<li class="carouselSlide">
+							<img
+								src="assets/meet-up-mockup.png"
+								alt="Mockup de la aplicación WebDevMeetUp"
+								class="imageFive"
+							/>
+							<div class="overlayFive">
+								<i class="fas fa-times fa-2x closeOverlayFive"></i>
+								<h3>WebDevMeetUp App</h3>
+								<p>
+									Serverless PWA built with React using a test-driven technique.
+									It uses Google Calendar API to fetch upcoming events for the
+									community of web developers and it can be downloaded for
+									offline use.
+								</p>
+								<ul class="toolsUsed">
+									<li>AWS</li>
+									<li>Google Calendar API</li>
+									<li>React</li>
+									<li>Recharts</li>
+									<li>OAuth2</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://tanimaraeliassantos.github.io/webdevmeetup/"
+										target="_blank"
+										class="button"
+										>view live</a
+									>
+									<a
+										href="https://github.com/tanimaraeliassantos/webdevmeetup"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+
+						<li class="carouselSlide">
+							<img
+								src="assets/pokedex-mockup.png"
+								alt="Mockup de la aplicación Pokedex"
+								class="imageSix"
+							/>
+							<div class="overlaySix">
+								<i class="fas fa-times fa-2x closeOverlaySix"></i>
+								<h3>Pokedex App</h3>
+								<p>
+									A Pokemon Index App built with HTML, CSS and JavaScript that
+									loads data from an external API and enables viewing of data
+									points in details to the user.
+								</p>
+								<ul class="toolsUsed">
+									<li>Bootstrap</li>
+									<li>CSS</li>
+									<li>HTML</li>
+									<li>JavaScript</li>
+								</ul>
+								<div class="viewProject">
+									<a
+										href="https://tanimaraeliassantos.github.io/pokedexproject"
+										target="_blank"
+										class="button"
+										>view live</a
+									>
+									<a
+										href="https://github.com/tanimaraeliassantos/pokedexproject"
+										target="_blank"
+										class="button"
+										>github</a
+									>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<button class="carouselButton">&rightarrow;</button>
 				</div>
-				<!-- ** myFlix Angular Client **-->
-				<div>
-					<div class="project">
-						<img
-							src="assets/myFlix-Angular-mockup.png"
-							alt=""
-							class="imageOne"
-						/>
-						<div class="overlayOne">
-							<i class="fas fa-times fa-2x closeOverlayOne"></i>
-							<h3>myFlix Angular Client</h3>
-							<p>
-								Client-side of a movie database app built with Angular. User can
-								view and manage information on movies they like and on their
-								profile.
-							</p>
-							<ul class="toolsUsed">
-								<li>Angular</li>
-								<li>Express</li>
-								<li>Mongoose</li>
-								<li>Node</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://tanimaraeliassantos.github.io/Angular-Client-myFlix-App/welcome"
-									target="_/blank"
-									class="button"
-									>view live</a
-								>
-								<a
-									href="https://github.com/tanimaraeliassantos/Angular-Client-myFlix-App"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
-					<!-- ** myFlix React Client **-->
-
-					<div class="project">
-						<img src="assets/myFlix-react-mockup.png" alt="" class="imageTwo" />
-						<div class="overlayTwo">
-							<i class="fas fa-times fa-2x closeOverlayTwo"></i>
-							<h3>myFlix React Client</h3>
-							<p>
-								Client-side of a movie database app built with React. Users can
-								view and manage information on movies they like and on their
-								profile.
-							</p>
-							<ul class="toolsUsed">
-								<li>Express</li>
-								<li>Mongoose</li>
-								<li>Node</li>
-								<li>React</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://moviesmyflix.netlify.app/"
-									target="_/blank"
-									class="button"
-									>view live</a
-								>
-								<a
-									href="https://github.com/tanimaraeliassantos/myFlix-client"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
-
-					<!--** myFlix Server-side Project **-->
-
-					<div class="project">
-						<img
-							src="assets/myFlix-server-mockup.png"
-							alt=""
-							class="imageThree"
-						/>
-						<div class="overlayThree">
-							<i class="fas fa-times fa-2x closeOverlayThree"></i>
-							<h3>myFlix Server-side Project</h3>
-							<p>
-								Backend of myFlix App. A MERN stack, RESTful app stored in
-								MongoDB, using JSON Web Tokens to secure information.
-							</p>
-							<ul class="toolsUsed">
-								<li>Express</li>
-								<li>Heroku</li>
-								<li>MongoDB</li>
-								<li>Node</li>
-								<li>Postman</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://github.com/tanimaraeliassantos/myFlix-Project"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
-					<!--** DEVChat App **-->
-
-					<div class="project">
-						<img src="assets/DEV-chat-mockup.png" alt="" class="imageFour" />
-						<div class="overlayFour">
-							<i class="fas fa-times fa-2x closeOverlayFour"></i>
-							<h3>DevChat App</h3>
-							<p>
-								A chat application for mobile devices built with React Native
-								and Expo.
-							</p>
-							<ul class="toolsUsed">
-								<li>Expo</li>
-								<li>Firebase</li>
-								<li>Gifted Chat</li>
-								<li>React Native</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://www.youtube.com/watch?v=k6-SGBRoPmI"
-									target="_/blank"
-									class="button"
-									>view demo</a
-								>
-								<a
-									href="https://github.com/tanimaraeliassantos/DEV-chat-app"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
-					<!--** WebDevMeetUp App-->
-
-					<div class="project">
-						<img src="assets/meet-up-mockup.png" alt="" class="imageFive" />
-						<div class="overlayFive">
-							<i class="fas fa-times fa-2x closeOverlayFive"></i>
-							<h3>WebDevMeetUp App</h3>
-							<p>
-								Serverless PWA built with React using a test-driven technique.
-								It uses Google Calendar API to fetch upcoming events for the
-								community of web developers and it can be downloaded for offline
-								use.
-							</p>
-							<ul class="toolsUsed">
-								<li>AWS</li>
-								<li>Google Calendar API</li>
-								<li>React</li>
-								<li>Recharts</li>
-								<li>OAuth2</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://tanimaraeliassantos.github.io/webdevmeetup/"
-									target="_/blank"
-									class="button"
-									>view live</a
-								>
-								<a
-									href="https://github.com/tanimaraeliassantos/webdevmeetup"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
-
-					<!--** Pokedex Project **-->
-
-					<div class="project">
-						<img src="assets/pokedex-mockup.png" alt="" class="imageSix" />
-						<div class="overlaySix">
-							<i class="fas fa-times fa-2x closeOverlaySix"></i>
-							<h3>Pokedex App</h3>
-							<p>
-								A Pokemon Index App built with HTML, CSS and JavaScript that
-								loads data from an external API and enables viewing of data
-								points in details to the user.
-							</p>
-							<ul class="toolsUsed">
-								<li>Bootstrap</li>
-								<li>CSS</li>
-								<li>HTML</li>
-								<li>JavaScript</li>
-							</ul>
-							<div class="viewProject">
-								<a
-									href="https://tanimaraeliassantos.github.io/pokedexproject"
-									target="_/blank"
-									class="button"
-									>view live</a
-								>
-								<a
-									href="https://github.com/tanimaraeliassantos/pokedexproject"
-									target="_/blank"
-									class="button"
-									>github</a
-								>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 			<!-- ** ABOUT ME **-->
@@ -364,7 +373,6 @@
 							>
 								Download my resume
 							</a>
-							<br />
 						</div>
 						<div class="aboutMeImage">
 							<img
@@ -437,10 +445,7 @@
 					</div>
 				</div>
 			</section>
-			<br />
 			<hr />
-			<br />
-
 			<!--** CONTACT **-->
 			<section class="section" id="contact">
 				<div class="wrapper" data-aos="fade-up" data-aos-once="true">
@@ -479,6 +484,9 @@
 			<p>designed and developed by Tanimara Santos 2022</p>
 		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="vendor/typed.js"></script>
 		<script>
 			var typed = new Typed('#typed', {
@@ -488,13 +496,8 @@
 				loop: true,
 			});
 		</script>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="script.js"></script>
-		<script src="vendor/owl-carousel/owl.carousel.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
+
+		<script src="script.js"></script>
 	</body>
 </html>
