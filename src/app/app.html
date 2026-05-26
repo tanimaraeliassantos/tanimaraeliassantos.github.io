@@ -2,19 +2,22 @@
 <header class="hero" id="top">
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-right">
+      <button class="menu-toggle" (click)="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-right" [class.active]="isOpen">
         <ul class="nav-links">
           <li>
-            <a href="#projects">{{ 'NAV_PROJECTS' | translate }}</a>
+            <a href="#projects"(click)="isOpen = false">{{ 'NAV_PROJECTS' | translate }}</a>
           </li>
           <li>
-            <a href="#timeline">{{ 'NAV_JOURNEY' | translate }}</a>
+            <a href="#timeline"(click)="isOpen = false">{{ 'NAV_JOURNEY' | translate }}</a>
           </li>
           <li>
-            <a href="#notes">{{ 'NAV_NOTES' | translate }}</a>
+            <a href="#notes"(click)="isOpen = false">{{ 'NAV_NOTES' | translate }}</a>
           </li>
           <li>
-            <a href="#contact">{{ 'NAV_CONTACT' | translate }}</a>
+            <a href="#contact"(click)="isOpen = false"> {{ 'NAV_CONTACT' | translate }}</a>
           </li>
         </ul>
 

@@ -8,6 +8,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './app.css',
 })
 export class AppComponent {
+  isOpen = false;
   constructor(private translate: TranslateService) {
     this.translate.setFallbackLang('es');
     this.translate.use('es');
@@ -15,5 +16,9 @@ export class AppComponent {
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+  }
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
   }
 }
