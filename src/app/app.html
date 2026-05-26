@@ -1,0 +1,347 @@
+<!-- HERO SECTION -->
+<header class="hero" id="top">
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#top">TS.</a>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Journey</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="language-switcher">
+          <button (click)="switchLanguage('en')">EN</button>
+          <button (click)="switchLanguage('es')">ES</button>
+          <button (click)="switchLanguage('pt')">PT</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="eyebrow">{{ 'EYEBROW' | translate }}</p>
+
+      <h1>{{ 'HERO_TITLE' | translate }}</h1>
+
+      <p class="hero-description">
+        {{ 'HERO_DESCRIPTION' | translate }}
+      </p>
+
+      <!-- Actualizado con tus tecnologías reales y fuertes -->
+      <div class="hero-tags">
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Angular</span>
+        <span>Python</span>
+        <span>Docker</span>
+        <span>REST APIs</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="primary-btn">{{ 'BTN_PROJECTS' | translate }}</a>
+        <a href="ES-Tanimara_ELIAS_SANTOS-software_developer.pdf" class="secondary-btn" download>
+          {{ 'BTN_CV' | translate }}
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="image-wrapper">
+        <img
+          src="Tanimara_ELIAS_SANTOS-headshot.png"
+          alt="Portrait of Tanimara Santos"
+          class="hero-avatar"
+        />
+        <div class="copacabana-bg"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURED PROJECTS -->
+<section class="projects-section" id="projects">
+  <div class="section-heading">
+    <p class="section-label">{{ 'PROJECTS_LABEL' | translate }}</p>
+    <h2>{{ 'PROJECTS_TITLE' | translate }}</h2>
+  </div>
+
+  <div class="projects-grid">
+    <!-- PROJECT 1: Heritage Kitchen -->
+    <article class="project-card">
+      <div class="project-preview">
+        <img src="showcase-heritage_kitchen.png" alt="Heritage Kitchen preview" />
+      </div>
+      <div class="project-content">
+        <div class="project-meta">
+          <span>{{ 'P1_META' | translate }}</span>
+        </div>
+        <h3>{{ 'P1_TITLE' | translate }}</h3>
+        <p class="project-summary">{{ 'P1_SUMMARY' | translate }}</p>
+        <div class="project-details-grid">
+          <div>
+            <h4>{{ 'P1_PROBLEM_TITLE' | translate }}</h4>
+            <p>{{ 'P1_PROBLEM_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P1_BUILT_TITLE' | translate }}</h4>
+            <p>{{ 'P1_BUILT_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P1_CONSTRAINT_TITLE' | translate }}</h4>
+            <p>{{ 'P1_CONSTRAINT_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P1_LEARNED_TITLE' | translate }}</h4>
+            <p>{{ 'P1_LEARNED_DESC' | translate }}</p>
+          </div>
+        </div>
+        <div class="project-actions">
+          <a
+            href="https://github.com/tanimaraeliassantos/heritage-kitchen"
+            target="_blank"
+            class="github-link"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: Smart Menu -->
+    <article class="project-card">
+      <div class="project-content">
+        <div class="project-meta">
+          <span>{{ 'P2_META' | translate }}</span>
+        </div>
+        <h3>{{ 'P2_TITLE' | translate }}</h3>
+        <p class="project-summary">{{ 'P2_SUMMARY' | translate }}</p>
+        <div class="project-details-grid">
+          <div>
+            <h4>{{ 'P2_DECISION_TITLE' | translate }}</h4>
+            <p>{{ 'P2_DECISION_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P2_REFLECTION_TITLE' | translate }}</h4>
+            <p>{{ 'P2_REFLECTION_DESC' | translate }}</p>
+          </div>
+        </div>
+        <div class="project-actions">
+          <a
+            href="https://github.com/tanimaraeliassantos/smart-menu-front"
+            target="_blank"
+            class="github-link"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-preview">
+        <img src="showcase-smart_menu.png" alt="Smart Menu preview" />
+      </div>
+    </article>
+
+    <!-- PROJECT 3: AstroReserva -->
+    <article class="project-card">
+      <div class="project-preview">
+        <img src="showcase-astroreserva.png" alt="AstroReserva preview" />
+      </div>
+      <div class="project-content">
+        <div class="project-meta">
+          <span>{{ 'P3_META' | translate }}</span>
+        </div>
+        <h3>{{ 'P3_TITLE' | translate }}</h3>
+        <p class="project-summary">{{ 'P3_SUMMARY' | translate }}</p>
+        <div class="project-details-grid">
+          <div>
+            <h4>{{ 'P3_ARCH_TITLE' | translate }}</h4>
+            <p>{{ 'P3_ARCH_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P3_SECURITY_TITLE' | translate }}</h4>
+            <p>{{ 'P3_SECURITY_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P3_BIZ_TITLE' | translate }}</h4>
+            <p>{{ 'P3_BIZ_DESC' | translate }}</p>
+          </div>
+          <div>
+            <h4>{{ 'P3_DESIGN_TITLE' | translate }}</h4>
+            <p>{{ 'P3_DESIGN_DESC' | translate }}</p>
+          </div>
+        </div>
+        <div class="project-actions">
+          <a
+            href="https://github.com/tanimaraeliassantos/reto-daw-eventos"
+            target="_blank"
+            class="github-link"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TOOLBOX -->
+<section class="toolbox-section">
+  <div class="section-heading narrow">
+    <p class="section-label">{{ 'TOOLBOX_LABEL' | translate }}</p>
+    <h2>{{ 'TOOLBOX_TITLE' | translate }}</h2>
+  </div>
+
+  <div class="toolbox-grid">
+    <div>
+      <span>{{ 'TOOL_FRONT' | translate }}</span>
+      <p>JavaScript · React · Angular · TypeScript · SCSS · Tailwind</p>
+    </div>
+
+    <div>
+      <span>{{ 'TOOL_BACK' | translate }}</span>
+      <p>Python · Node.js · Java · Spring Boot · REST APIs</p>
+    </div>
+
+    <div>
+      <span>{{ 'TOOL_SYS' | translate }}</span>
+      <p>Docker · Linux · Bash · Git · Deployment</p>
+    </div>
+
+    <div>
+      <span>{{ 'TOOL_DB' | translate }}</span>
+      <p>MySQL · PostgreSQL · MongoDB · Lovable (AI Prototyping)</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section" id="timeline">
+  <div class="section-heading narrow">
+    <p class="section-label">{{ 'JOURNEY_LABEL' | translate }}</p>
+    <h2>{{ 'JOURNEY_TITLE' | translate }}</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-year">2014</span>
+      <div>
+        <h3>{{ 'J_23_TITLE' | translate }}</h3>
+        <p>{{ 'J_23_DESC' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2021</span>
+      <div>
+        <h3>{{ 'J_24_TITLE' | translate }}</h3>
+        <p>{{ 'J_24_DESC' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2024</span>
+      <div>
+        <h3>{{ 'J_25_TITLE' | translate }}</h3>
+        <p>{{ 'J_25_DESC' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026</span>
+      <div>
+        <h3>{{ 'J_26_TITLE' | translate }}</h3>
+        <p>{{ 'J_26_DESC' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTES / BLOG -->
+<section class="notes-section" id="notes">
+  <div class="section-heading">
+    <p class="section-label">{{ 'NOTES_LABEL' | translate }}</p>
+    <h2>{{ 'NOTES_TITLE' | translate }}</h2>
+  </div>
+
+  <div class="notes-grid">
+    <article class="note-card">
+      <span>{{ 'N1_TAG' | translate }}</span>
+      <h3>{{ 'N1_TITLE' | translate }}</h3>
+      <p>{{ 'N1_DESC' | translate }}</p>
+    </article>
+
+    <article class="note-card">
+      <span>{{ 'N2_TAG' | translate }}</span>
+      <h3>{{ 'N2_TITLE' | translate }}</h3>
+      <p>{{ 'N2_DESC' | translate }}</p>
+    </article>
+
+    <article class="note-card">
+      <span>{{ 'N3_TAG' | translate }}</span>
+      <h3>{{ 'N3_TITLE' | translate }}</h3>
+      <p>{{ 'N3_DESC' | translate }}</p>
+    </article>
+  </div>
+</section>
+
+<!-- MULTILINGUAL -->
+<section class="language-section">
+  <div class="language-card">
+    <p class="section-label">{{ 'INT_LABEL' | translate }}</p>
+
+    <h2>{{ 'INT_TITLE' | translate }}</h2>
+
+    <div class="language-grid">
+      <div>
+        <span>{{ 'SPANISH' | translate }}</span>
+        <p>{{ 'FLUENCY' | translate }}</p>
+      </div>
+
+      <div>
+        <span>{{ 'PORTUGUESE' | translate }}</span>
+        <p>{{ 'FLUENCY' | translate }}</p>
+      </div>
+
+      <div>
+        <span>{{ 'ENGLISH' | translate }}</span>
+        <p>{{ 'FLUENCY' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-content">
+    <p class="section-label">{{ 'CONTACT_LABEL' | translate }}</p>
+
+    <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
+
+    <p>{{ 'CONTACT_DESC' | translate }}</p>
+
+    <div class="contact-links">
+      <a href="mailto:tanimaraeliassantos@gmail.com">Email</a>
+      <a href="https://github.com/tanimaraeliassantos">GitHub</a>
+      <a href="https://www.linkedin.com/in/tanimara-santos/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>{{ 'FOOTER' | translate }}</p>
+</footer>
