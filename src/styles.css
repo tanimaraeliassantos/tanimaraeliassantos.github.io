@@ -168,6 +168,14 @@ section {
   justify-content: space-between;
 }
 
+.navbar .nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
 .logo {
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -177,7 +185,7 @@ section {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .nav-links {

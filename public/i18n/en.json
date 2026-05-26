@@ -5,6 +5,11 @@
   "BTN_PROJECTS": "View Projects",
   "BTN_CV": "Download CV",
 
+  "NAV_PROJECTS": "Projects",
+  "NAV_JOURNEY": "Journey",
+  "NAV_NOTES": "Notes",
+  "NAV_CONTACT": "Contact",
+
   "PROJECTS_LABEL": "Featured Projects",
   "PROJECTS_TITLE": "Real solutions, real decisions.",
 
