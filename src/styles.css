@@ -638,22 +638,22 @@ section {
 }
 
 .note-card {
-  padding: 2rem;
-  border-radius: var(--radius-md);
-
-  background: var(--surface);
-  border: 1px solid var(--line);
-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--line);
   transition: var(--transition);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .note-card:hover {
   transform: translateY(-6px);
   border-color: var(--line-strong);
+  background: var(--surface-light);
 }
 
 .note-card span {
