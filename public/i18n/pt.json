@@ -89,5 +89,13 @@
   "CONTACT_LABEL": "Contato",
   "CONTACT_TITLE": "Vamos conversar?",
   "CONTACT_DESC": "Estou à procura de uma equipe comprometida, com projetos interessantes para escrever código limpo e evoluir. Se quiser bater um papo, me mande um e-mail!",
-  "FOOTER": "Projetado e desenvolvido por Tanimara Santos — 2026"
+  "FOOTER": "Projetado e desenvolvido por Tanimara Santos — 2026",
+
+  "BLOGS": {
+    "CLAUDE_101": {
+      "TITLE": "Além do código: Aprendendo a colaborar com a IA",
+      "DATE": "15 de junho de 2026",
+      "CONTENT": "<h3>Como posso integrar a IA sem perder o controle?</h3><p>Como desenvolvedora recém-formada em DAW, uma das perguntas que mais me faço é: como posso integrar a IA sem perder o controle ou a qualidade do que construo? Não quero que a IA escreva tudo por mim; quero que seja uma parceira que me ajude a ser mais eficiente sem impedir o meu processo de aprendizado.</p><p>Na semana passada, completei o curso Claude 101 da Anthropic, e a experiência mudou a minha mentalidade. Não se trata apenas de fazer perguntas a um chat, mas de entender como estruturar o contexto para que o resultado seja realmente útil.</p><h3>O que levo desta formação</h3><p>O que mais me surpreendeu foi a gestão de Projetos e Artifacts. Até agora, via os prompts como algo isolado. Mas, ao tratar o 'Projeto' como uma base de dados de contexto e o 'Artifact' como uma camada de apresentação onde renderizar o código, a interação torna-se muito mais lógica e profissional.</p><p>Outro ponto chave é o potencial das Skills e da automação. Já estou preparando uma skill personalizada para revisar o meu próprio código sob os padrões de Clean Code. Acho fascinante poder transformar tarefas repetitivas em processos automáticos.</p><p>Por fim, o uso do Claude Code no terminal foi uma descoberta. Poder integrar um agente de desenvolvimento local faz uma diferença real na produtividade diária.</p><h3>O que vem a seguir?</h3><p>Este é apenas o primeiro passo. Estou convencida de que o valor de um desenvolvedor não reside apenas em escrever código, mas em saber orquestrar as ferramentas certas para resolver problemas complexos de forma limpa.</p><p>Vou transformar este espaço num registro das minhas aprendizagens técnicas. O objetivo é simples: crescer, compartilhar o que funciona e, acima de tudo, continuar aprendendo.</p>"
+    }
+  }
 }

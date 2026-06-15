@@ -89,5 +89,13 @@
   "CONTACT_LABEL": "Contacto",
   "CONTACT_TITLE": "¿Hablamos?",
   "CONTACT_DESC": "Busco un equipo serio con proyectos interesantes donde escribir código limpio y poder crecer como desarrolladora. Si quieres que charlemos, ¡escríbeme!",
-  "FOOTER": "Diseñado y desarrollado por Tanimara Santos — 2026"
+  "FOOTER": "Diseñado y desarrollado por Tanimara Santos — 2026",
+
+  "BLOGS": {
+    "CLAUDE_101": {
+      "TITLE": "Más allá del código: Aprendiendo a colaborar con la IA",
+      "DATE": "15 de junio de 2026",
+      "CONTENT": "<h3>¿Cómo puedo integrar la IA sin perder el control?</h3><p>Como desarrolladora recién graduada en DAW, una de las preguntas que más me hago es: ¿cómo puedo integrar la IA sin perder el control ni la calidad de lo que construyo? No quiero que la IA me escriba todo, quiero que sea una compañera que me ayude a ser más eficiente y que no impida mi proceso de aprendizaje.</p><p>La semana pasada completé el curso Claude 101 de Anthropic, y la experiencia me ha cambiado el chip. No se trata solo de hacer preguntas a un chat, sino de entender cómo estructurar el contexto para que el resultado sea realmente útil.</p><h3>Lo que me llevo de esta formación</h3><p>Lo que más me ha sorprendido ha sido la gestión de Proyectos y Artifacts. Hasta ahora, veía los prompts como algo aislado. Pero al tratar el 'Proyecto' como una base de datos de contexto y el 'Artifact' como una capa de presentación donde renderizar el código, la interacción se vuelve mucho más lógica y profesional.</p><p>Otro punto clave es el potencial de las Skills y la automatización. Ya estoy preparando una skill personalizada para revisar mi propio código bajo estándares de Clean Code. Me parece fascinante poder convertir tareas repetitivas en procesos automáticos.</p><p>Por último, el uso de Claude Code en la terminal ha sido un descubrimiento. Poder integrar un agente de desarrollo en local marca una diferencia real en la productividad diaria.</p><h3>¿Qué viene ahora?</h3><p>Este es solo el primer paso. Estoy convencida de que el valor de un desarrollador no está solo en picar código, sino en saber orquestar las herramientas adecuadas para resolver problemas complejos de forma limpia.</p><p>Voy a convertir este espacio en un registro de mis aprendizajes técnicos. El objetivo es simple: crecer, compartir lo que funciona y, sobre todo, seguir aprendiendo.</p>"
+    }
+  }
 }
