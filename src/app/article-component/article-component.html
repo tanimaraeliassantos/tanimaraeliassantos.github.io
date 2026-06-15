@@ -1,0 +1,13 @@
+<article class="article-wrapper">
+  @if (articleKey) {
+    <header class="article-header">
+      <a [routerLink]="['/']" class="back-btn">← Volver</a>
+      <h1>{{ 'BLOGS.' + articleKey + '.TITLE' | translate }}</h1>
+      <time class="article-date">{{ 'BLOGS.' + articleKey + '.DATE' | translate }}</time>
+    </header>
+
+    <section class="content">
+      <div [innerHTML]="'BLOGS.' + articleKey + '.CONTENT' | translate"></div>
+    </section>
+  }
+</article>
