@@ -4,6 +4,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/docs
 
 # Node
 /node_modules
@@ -44,3 +45,7 @@ vendor/
 # System files
 .DS_Store
 Thumbs.db
+
+# Archivos de entorno y logs
+.angular/
+npm-debug.log
