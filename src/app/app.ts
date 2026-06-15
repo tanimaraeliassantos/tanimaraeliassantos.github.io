@@ -1,16 +1,18 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class AppComponent {
   isOpen = false;
+
   constructor(private translate: TranslateService) {
-    this.translate.setFallbackLang('es');
+    this.translate.setDefaultLang('es');
     this.translate.use('es');
   }
 
