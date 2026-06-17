@@ -931,4 +931,25 @@ section {
   .nav-right.active {
     display: flex;
   }
+
+  .mouse-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px; /* Grosor de la línea */
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none; /* Crucial: que el ratón no choque con los puntos */
+    transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+    opacity: 1;
+    z-index: 9999;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transform: scale(0.2);
+  }
 }
