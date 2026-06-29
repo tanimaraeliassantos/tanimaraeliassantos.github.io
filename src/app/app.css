@@ -1,0 +1,25 @@
+.trail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.trail {
+  filter: url(#neon-glow);
+  stroke: #000000;
+  stroke-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transition: stroke 0.3s ease;
+}
+
+.trail-glow {
+  stroke-width: 1px !important;
+  opacity: 0.5;
+}
+
+.trail-core {
+  stroke-width: 1.5px !important;
+}
