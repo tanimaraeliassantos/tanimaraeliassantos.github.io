@@ -36,6 +36,38 @@
   </div>
 </nav>
 
+<svg class="trail-container">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path
+    #trail
+    class="trail-glow"
+    fill="none"
+    stroke="#fff"
+    stroke-linecap="round"
+    filter="url(#glow)"
+  />
+  <path
+    #trail
+    class="trail-glow"
+    fill="none"
+    stroke="#fff"
+    stroke-linecap="round"
+    filter="url(#glow)"
+  />
+
+  <path #trail class="trail-core" fill="none" stroke="#0b0b0c" stroke-linecap="round" />
+  <path #trail class="trail-core" fill="none" stroke="#0b0b0c" stroke-linecap="round" />
+</svg>
+
 <main>
   <router-outlet></router-outlet>
 </main>
