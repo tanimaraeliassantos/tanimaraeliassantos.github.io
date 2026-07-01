@@ -1,6 +1,6 @@
 <!-- HERO SECTION -->
 <header class="hero" id="top">
-   <div class="hero-grid">
+  <div class="hero-grid">
     <div class="hero-content">
       <p class="eyebrow">{{ 'EYEBROW' | translate }}</p>
 
@@ -10,7 +10,6 @@
         {{ 'HERO_DESCRIPTION' | translate }}
       </p>
 
-      
       <div class="hero-tags">
         <span>JavaScript</span>
         <span>React</span>
@@ -266,7 +265,14 @@
         desarrolladora DAW.
       </p>
     </a>
-
+    <a [routerLink]="['/blog', 'pantrychef-db']" class="note-card">
+      <span>Base de Datos & Arquitectura</span>
+      <h3>PantryChef: Diseñando la base de datos antes de escribir código</h3>
+      <p>
+        Un enfoque metódico sobre modelado de datos, normalización y diseño de un MVP sólido desde
+        el principio.
+      </p>
+    </a>
     <div class="note-card empty">
       <p>Próximamente más reflexiones técnicas...</p>
     </div>
@@ -315,4 +321,3 @@
     </div>
   </div>
 </section>
-
