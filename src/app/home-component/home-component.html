@@ -43,137 +43,37 @@
 <!-- FEATURED PROJECTS -->
 <section class="projects-section" id="projects">
   <div class="section-heading">
-    <p class="section-label">{{ 'PROJECTS_LABEL' | translate }}</p>
-    <h2>{{ 'PROJECTS_TITLE' | translate }}</h2>
+    <p class="section-label">{{ 'PROJECT_LIST_LABEL' | translate }}</p>
+    <h2>{{ 'PROJECT_LIST_TITLE' | translate }}</h2>
   </div>
 
   <div class="projects-grid">
-    <!-- PROJECT 1: Heritage Kitchen -->
-    <article class="project-card">
-      <div class="project-preview">
-        <img src="showcase-heritage_kitchen.png" alt="Heritage Kitchen preview" />
-      </div>
-      <div class="project-content">
-        <div class="project-meta">
-          <span>{{ 'P1_META' | translate }}</span>
-        </div>
-        <h3>{{ 'P1_TITLE' | translate }}</h3>
-        <p class="project-summary">{{ 'P1_SUMMARY' | translate }}</p>
-        <div class="project-details-grid">
-          <div>
-            <h4>{{ 'P1_PROBLEM_TITLE' | translate }}</h4>
-            <p>{{ 'P1_PROBLEM_DESC' | translate }}</p>
+    @for (project of projects; track project.id) {
+      <article class="project-card">
+        @if (project.image) {
+          <div class="project-card-image">
+            <img [src]="project.image" [alt]="project.titleKey | translate" />
           </div>
-          <div>
-            <h4>{{ 'P1_BUILT_TITLE' | translate }}</h4>
-            <p>{{ 'P1_BUILT_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P1_CONSTRAINT_TITLE' | translate }}</h4>
-            <p>{{ 'P1_CONSTRAINT_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P1_LEARNED_TITLE' | translate }}</h4>
-            <p>{{ 'P1_LEARNED_DESC' | translate }}</p>
-          </div>
-        </div>
-        <div class="project-actions">
-          <a
-            href="https://github.com/tanimaraeliassantos/heritage-kitchen"
-            target="_blank"
-            class="github-link"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+        }
+        <div class="project-card-header">
+          <h3 class="project-card-title">{{ project.titleKey | translate }}</h3>
+          <a [href]="project.github" target="_blank" class="project-gh-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
               <path
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
               />
             </svg>
           </a>
         </div>
-      </div>
-    </article>
 
-    <!-- PROJECT 2: Smart Menu -->
-    <article class="project-card">
-      <div class="project-content">
-        <div class="project-meta">
-          <span>{{ 'P2_META' | translate }}</span>
-        </div>
-        <h3>{{ 'P2_TITLE' | translate }}</h3>
-        <p class="project-summary">{{ 'P2_SUMMARY' | translate }}</p>
-        <div class="project-details-grid">
-          <div>
-            <h4>{{ 'P2_DECISION_TITLE' | translate }}</h4>
-            <p>{{ 'P2_DECISION_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P2_REFLECTION_TITLE' | translate }}</h4>
-            <p>{{ 'P2_REFLECTION_DESC' | translate }}</p>
-          </div>
-        </div>
-        <div class="project-actions">
-          <a
-            href="https://github.com/tanimaraeliassantos/smart-menu-front"
-            target="_blank"
-            class="github-link"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="project-preview">
-        <img src="showcase-smart_menu.png" alt="Smart Menu preview" />
-      </div>
-    </article>
+        <p class="project-card-desc">{{ project.descKey | translate }}</p>
 
-    <!-- PROJECT 3: AstroReserva -->
-    <article class="project-card">
-      <div class="project-preview">
-        <img src="showcase-astroreserva.png" alt="AstroReserva preview" />
-      </div>
-      <div class="project-content">
-        <div class="project-meta">
-          <span>{{ 'P3_META' | translate }}</span>
+        <div class="project-card-footer">
+          <p class="project-card-stack">{{ project.stackKey | translate }}</p>
+          <a [routerLink]="['/projects', project.id]" class="project-card-link"> Ver proyecto → </a>
         </div>
-        <h3>{{ 'P3_TITLE' | translate }}</h3>
-        <p class="project-summary">{{ 'P3_SUMMARY' | translate }}</p>
-        <div class="project-details-grid">
-          <div>
-            <h4>{{ 'P3_ARCH_TITLE' | translate }}</h4>
-            <p>{{ 'P3_ARCH_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P3_SECURITY_TITLE' | translate }}</h4>
-            <p>{{ 'P3_SECURITY_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P3_BIZ_TITLE' | translate }}</h4>
-            <p>{{ 'P3_BIZ_DESC' | translate }}</p>
-          </div>
-          <div>
-            <h4>{{ 'P3_DESIGN_TITLE' | translate }}</h4>
-            <p>{{ 'P3_DESIGN_DESC' | translate }}</p>
-          </div>
-        </div>
-        <div class="project-actions">
-          <a
-            href="https://github.com/tanimaraeliassantos/reto-daw-eventos"
-            target="_blank"
-            class="github-link"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </article>
+      </article>
+    }
   </div>
 </section>
 
