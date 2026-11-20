@@ -70,7 +70,7 @@
 
         <div class="project-card-footer">
           <p class="project-card-stack">{{ project.stackKey | translate }}</p>
-          <a [routerLink]="['/projects', project.id]" class="project-card-link"> Ver proyecto → </a>
+          <a [href]="project.github" target="_blank" rel="noopener noreferrer" class="project-card-link"> Ver proyecto → </a>
         </div>
       </article>
     }
